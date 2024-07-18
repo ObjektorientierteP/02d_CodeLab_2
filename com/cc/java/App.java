@@ -4,20 +4,16 @@ public class App {
 
 	public static void main(String[] args) {
 	
-		// Konstruktor Mit 4 Objekte
-		Mitarbeiter mitarbeiterInfo = new Mitarbeiter(null, null, null, 0);
+		// Konstruktor Mit 3 Objekte
+		Mitarbeiter mitarbeiterInfo1 = new Mitarbeiter("Jobs","Steve", "Apple CEO", 1955);
+		output(mitarbeiterInfo1.getInfo());
 
-		// Mitarbeiter 1
-		mitarbeiterInfo.setInfo("Jobs","Steve", "Apple CEO", 1955);
-		output(mitarbeiterInfo.getInfo());
-		
-		// Mitarbeiter 2
-		mitarbeiterInfo.setInfo("Gates","Bill", "Microsoft CEO", 1975);
-		output(mitarbeiterInfo.getInfo());
+		Mitarbeiter mitarbeiterInfo2 = new Mitarbeiter("Gates","Bill", "Microsoft CEO", 1975);
+		output(mitarbeiterInfo2.getInfo());
 
-		// Mitarbeiter 2
-		mitarbeiterInfo.setInfo("Arian","", "", 0);
-		output(mitarbeiterInfo.getInfo());
+		Mitarbeiter mitarbeiterInfo3 = new Mitarbeiter("Arian","Hormozfar", "", 0);
+		output(mitarbeiterInfo3.getInfo());
+
 	}
 
 	private static void output(String outStr) {
