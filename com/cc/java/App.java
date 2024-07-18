@@ -14,6 +14,10 @@ public class App {
 		// Mitarbeiter 2
 		mitarbeiterInfo.setInfo("Gates","Bill", "Microsoft CEO", 1975);
 		output(mitarbeiterInfo.getInfo());
+
+		// Mitarbeiter 2
+		mitarbeiterInfo.setInfo("Arian","", "", 0);
+		output(mitarbeiterInfo.getInfo());
 	}
 
 	private static void output(String outStr) {
